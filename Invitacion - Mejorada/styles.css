@@ -1,0 +1,64 @@
+/* CONTENEDORES*/
+.container {
+    background-color: rgba(0, 0, 0, 0.7); /*FONDO CON OPACIDAD .7*/
+    padding: 20px;
+    border-radius: 8px; /*BORDES REDONDOS*/
+}
+
+/* TITULOS */
+h1, h2, h3 {
+    color: #ffd700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /*SOMBRA EN LOS TITULOS*/
+}
+
+/* PARRAFOS y ELEMENTOS DE LISTA*/
+p, li {
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/*INICIO DE ESTILOS DE NAVBAR*/
+.navbar {
+    background-color: #005b93;
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+    color: #ffffff; /* Cambia el color del texto a blanco */
+}
+
+/*CARRUSEL DE IMAGENES*/
+.carousel-item img {
+    height: 400px; /* Ajusta la altura de las imágenes del carrusel */
+    object-fit: cover; /* Asegura que las imágenes cubran el área sin deformarse */
+}
+
+/*IMAGEN DE FONDO EN TODAS LAS PAGINAS*/
+body {
+    background-image: url('./imagenes/fondo.avif');
+    background-size: cover; /*LA IMAGEN CUBRE TODA LA PAGINA*/
+    background-position: center; /*CENTRA LA IMAGEN*/
+    background-repeat: no-repeat; /*SOLO SE MUESTRA UNA IMAGEN*/
+}
+
+/*CARTAS*/
+.card-custom {
+    background-color: #005b93;
+    color: white; /* Para que el texto sea legible */
+}
+
+/*ACORDEON*/
+.accordion-custom .accordion-button {
+    background-color: #005b93; /* Mismo color que el navbar */
+    color: white; /* Color del texto */
+    border: none; /* Quitar bordes */
+}
+
+.accordion-custom .accordion-button:not(.collapsed) {
+    background-color: #00487a; /* Color más oscuro cuando está expandido */
+}
+
+.accordion-custom .accordion-body {
+    background-color: #005b93;
+    color: white;
+}
