@@ -5,10 +5,16 @@
 
 body {
     background-color: #73df73; /* Fondo Global de color Verde claro */
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif; /* O usa 'Nunito', sans-serif */
     padding-top: 130px; /* Espacio para barra superior y navbar */
     margin: 20px; /* Añade un margen global para el espacio entre el contenido y el navbar */
 }
+
+.text-decoration-none {
+    text-decoration: none;
+    color: inherit; /* Mantiene el color original */
+}
+
 
 /* Login Card */
 .custom-card {
@@ -25,7 +31,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p, a, li {
-    color: #333;
+    color: #000000;
 }
 
 /* Barra superior */
@@ -69,27 +75,57 @@ p, a, li {
 
 /* Estilo personalizado del acordeón */
 .accordion-button {
-    background-color: #000000; /* Fondo negro */
+    background-color: #242424; /* Fondo negro */
     color: #ffffff; /* Texto blanco */
     border: none;
 }
+
 .accordion-button:not(.collapsed) {
-    background-color: #73df73; /* Fondo verde cuando está abierto */
-    color: #000000; /* Texto negro */
+    background-color: #242424; /* Fondo gris oscuro cuando está abierto */
+    color: #ffffff; /* Texto blanco */
     font-weight: bold;
 }
+
 .accordion-button:focus {
-    box-shadow: none; /* Sin sombra al hacer foco */
+    box-shadow: 0 0 0 0.25rem rgba(115, 223, 115, 0.5); /* Sombra verde al hacer foco */
 }
+
 .accordion-item {
-    border: none; /* Quita el borde del acordeón */
+    border: none;
 }
+
 .accordion-body {
-    background-color: #000000; /* Fondo negro */
+    background-color: #333; /* Fondo negro */
     color: #ffffff; /* Texto blanco */
     border-top: 1px solid #73df73; /* Borde verde superior en el cuerpo */
 }
 
+/* Carrusel de fotos */
+.carousel-inner .carousel-item img {
+    width: 100%;
+    height: 500px; /* Ajusta la altura según lo que necesites */
+    object-fit: cover; /* Mantiene el enfoque central de la imagen, evitando distorsión */
+}
+
+.carousel-caption h5 {
+    color: #76f089; 
+}
+
+.carousel-caption p {
+    color: #073007; 
+}
+
+/* Seccion explicativa del Index */
+.section-explicativa {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px; /* Bordes redondeados */
+    text-align: center;
+}
+
+.section-explicativa p{
+color: rgb(255, 255, 255); /* Cambia el color del texto para que contraste */
+}
 
 /* Footer */
 .footer {
@@ -103,6 +139,11 @@ p, a, li {
     width: 100%;
     box-sizing: border-box;
 }
+
+/*.content {*/
+/*    margin-bottom: 60px; /* Ajusta según el tamaño del footer */
+/*}*/
+
 
 /* Mapa */
 #map {

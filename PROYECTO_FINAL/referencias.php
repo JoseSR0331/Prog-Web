@@ -36,8 +36,6 @@ include("./componentes/encabezado.php");
             <li>Today's Geriatric Medicine [Internet]. Spring City (PA): Great Valley Publishing; c2022. MMSE vs. MoCA: What You Should Know; [cited 2022 Oct 31]; [about 2 screens]; Available from: http://www.todaysgeriatricmedicine.com/news/ex_012511_01.shtml</li>
             <li>U.S. Preventive Services Task Force [Internet]. Rockville (MD): U.S. Preventive Services Task Force; Screening for Cognitive Impairment in Older Adults; [cited 2022 Oct 31]; [about 3 screens]. Available from: https://www.uspreventiveservicestaskforce.org/Home/GetFile/1/482/dementes/pdf</li>
             <li>Xueyan L, Jie D, Shasha Z, Wangen L, Haimei L. Comparison of the value of Mini-Cog and MMSE screening in the rapid identification of Chinese outpatients with mild cognitive impairment. Medicine [Internet]. 2018 Jun [cited 2022 Oct 31]; 97(22):e10966. Available from: https://journals.lww.com/md-journal/Fulltext/2018/06010/Comparison_of_the_value_of_Mini_Cog_and_MMSE.74.aspx</li>
-            <li></li>
-            <li></li>
         </ul>
     </div>
     <?php
