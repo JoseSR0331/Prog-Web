@@ -58,6 +58,39 @@ p, a, li {
     font-size: 1em;
 }
 
+.offcanvas-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.offcanvas-footer {
+    margin-top: auto; /* Empuja el botón hacia abajo */
+}
+
+/* Estilo personalizado del acordeón */
+.accordion-button {
+    background-color: #000000; /* Fondo negro */
+    color: #ffffff; /* Texto blanco */
+    border: none;
+}
+.accordion-button:not(.collapsed) {
+    background-color: #73df73; /* Fondo verde cuando está abierto */
+    color: #000000; /* Texto negro */
+    font-weight: bold;
+}
+.accordion-button:focus {
+    box-shadow: none; /* Sin sombra al hacer foco */
+}
+.accordion-item {
+    border: none; /* Quita el borde del acordeón */
+}
+.accordion-body {
+    background-color: #000000; /* Fondo negro */
+    color: #ffffff; /* Texto blanco */
+    border-top: 1px solid #73df73; /* Borde verde superior en el cuerpo */
+}
+
+
 /* Footer */
 .footer {
     background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1));

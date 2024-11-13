@@ -28,7 +28,7 @@
                 <h5>Menu de Usuario</h5>
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
             </div>
-            <div class="offcanvas-body">
+            <div class="offcanvas-body d-flex flex-column justify-content-between">
                 <ul class="navbar-nav flex-grow-1 pe-3">
                     <?php if (isset($_SESSION['username'])): ?>
                         <!-- Botón de perfil de usuario cuando está conectado -->
@@ -47,9 +47,10 @@
                         </li>
                     <?php endif; ?>
                 </ul>
+        
                 <?php if (isset($_SESSION['username'])): ?>
                     <!-- Botón de Cerrar sesión al fondo del offcanvas cuando el usuario está conectado -->
-                    <div class="offcanvas-footer">
+                    <div class="offcanvas-footer mt-auto">
                         <a class="btn btn-danger w-100" href="logout.php">Cerrar sesión</a>
                     </div>
                 <?php endif; ?>

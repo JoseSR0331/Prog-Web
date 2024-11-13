@@ -8,19 +8,19 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $remember = isset($_POST['remember']); // Verifica si se seleccionó la casilla de recordar
 
     // Verificación del usuario en la base de datos
-    $sql = "SELECT id, password FROM usuarios WHERE nombreUsuario = ?";
+    $sql = "SELECT us_id, password FROM usuarios WHERE nombreUsuario = ?";
     $stmt = $conn->prepare($sql);
     $stmt->bind_param("s", $nombreUsuario);
     $stmt->execute();
     $stmt->store_result();
     
     if ($stmt->num_rows == 1) {
-        $stmt->bind_result($id, $password_hashed);
+        $stmt->bind_result($us_id, $password_hashed);
         $stmt->fetch();
         
         if (password_verify($password, $password_hashed)) {
             // Configura las variables de sesión
-            $_SESSION['user_id'] = $id;
+            $_SESSION['user_id'] = $us_id;
             $_SESSION['username'] = $nombreUsuario;
 
             // Si se seleccionó "recordar usuario", guarda el nombre de usuario en una cookie
