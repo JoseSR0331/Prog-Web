@@ -7,6 +7,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $apellidos = $_POST['apellidos'];
     $edad = $_POST['edad'];
     $email = $_POST['email'];
+    $nombreUsuario = $_POST['nombreUsuario'];
     $password = $_POST['password'];
     $confirm_password = $_POST['confirm_password'];
 
@@ -21,9 +22,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $password_hashed = password_hash($password, PASSWORD_DEFAULT);
 
     // Insertar en la base de datos
-    $sql = "INSERT INTO usuarios (nombre, apellidos, edad, email, password) VALUES (?, ?, ?, ?, ?)";
+    $sql = "INSERT INTO usuarios (nombre, apellidos, edad, email, nombreUsuario, password) VALUES (?, ?, ?, ?, ?, ?)";
     $stmt = $conn->prepare($sql);
-    $stmt->bind_param("ssiss", $nombre, $apellidos, $edad, $email, $password_hashed);
+    $stmt->bind_param("ssisss", $nombre, $apellidos, $edad, $email, $nombreUsuario, $password_hashed);
+
 
     if ($stmt->execute()) {
         $_SESSION['success'] = "Registro exitoso. Por favor, inicia sesión.";

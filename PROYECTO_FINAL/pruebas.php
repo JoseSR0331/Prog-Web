@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <?php
+session_start();
 include("./componentes/encabezado.php");
 ?>
 <head>

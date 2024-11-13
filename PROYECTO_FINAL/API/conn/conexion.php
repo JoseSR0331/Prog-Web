@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
 $username = "root";
-$password = "";
+$password = "31jose2000";
 $database = "cogniticare";
 
 // Crear conexión

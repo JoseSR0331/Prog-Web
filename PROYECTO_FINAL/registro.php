@@ -51,6 +51,12 @@ session_start();
                                 <input type="email" class="form-control" id="email" name="email" required placeholder="Ingresa tu correo electrónico">
                             </div>
 
+                            <!-- Campo nombre de usuario -->
+                            <div class="mb-3">
+                                <label for="nombreUsuario" class="form-label">Nombre de Usuario</label>
+                                <input type="text" class="form-control" id="nombreUsuario" name="nombreUsuario" required placeholder="Ingresa tu nombre de usuario">
+                            </div>
+
                             <!-- Campo de Contraseña -->
                             <div class="mb-3">
                                 <label for="password" class="form-label">Contraseña</label>

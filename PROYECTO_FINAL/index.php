@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
 <?php
+session_start();
+echo isset($_SESSION['username']) ? "Usuario en sesión: " . $_SESSION['username'] : "No hay usuario en sesión";
 include("./componentes/encabezado.php");
 ?>
 <head>
