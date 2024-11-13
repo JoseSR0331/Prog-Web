@@ -6,7 +6,7 @@ include("./componentes/encabezado.php");
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil</title>
+    <title>CognitiCare - Escala de Ansiedad Geriatrica</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
     <!-- Script para jQuery -->
@@ -16,7 +16,7 @@ include("./componentes/encabezado.php");
 <body>
     <div class="content container mt-5">
         <h1>Bienvenido a CognitiCare</h1>
-        <p>Contenido de la página perfil.</p>
+        <p>Contenido de la página test de Escala de Ansiedad Geriatrica.</p>
     </div>
     <!-- CONTENIDO DE LA PAGINA -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>

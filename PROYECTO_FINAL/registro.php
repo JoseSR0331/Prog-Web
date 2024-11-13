@@ -18,7 +18,7 @@ session_start();
             <div class="col-md-6">
                 <div class="card shadow-sm custom-card">
                     <div class="card-body text-center">
-                        <!-- Logo en la parte superior -->
+                        <!-- Logo de cognitiCare -->
                         <div class="mb-4">
                             <img src="./imgs/logo.jpg" alt="Logo" class="img-fluid" style="max-height: 100px;">
                         </div>
@@ -26,7 +26,7 @@ session_start();
                         <h3 class="card-title text-center mb-4">Registro de Usuario</h3>
 
                         <!-- Formulario de Registro -->
-                        <form action="procesa_registro.php" method="POST">
+                        <form action="./componentes/procesa_registro.php" method="POST">
                             <!-- Campo de Nombre -->
                             <div class="mb-3">
                                 <label for="nombre" class="form-label">Nombre</label>
@@ -63,7 +63,7 @@ session_start();
                                 <input type="password" class="form-control" id="confirm_password" name="confirm_password" required placeholder="Confirma tu contraseña">
                             </div>
 
-                            <!-- Botón de Confirmar Registro -->
+                            <!-- Botón de Registro -->
                             <div class="d-grid mb-3">
                                 <button type="submit" class="btn btn-dark">Registrar</button>
                             </div>
