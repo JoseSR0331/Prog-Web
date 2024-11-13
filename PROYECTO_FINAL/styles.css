@@ -18,10 +18,37 @@ body {
 
 /* Login Card */
 .custom-card {
-    background-color: #ffffff; /* Tono más oscuro que el fondo principal */
+    background-color: #f8f9fa;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.7); /* Sombra para darle profundidad */
     border-radius: 8px; /* Bordes redondeados */
     color: #333;
+}
+
+/* Cards */
+.card-body {
+    background-color: #f8f9fa;
+    color: #333; /* Color claro para el texto */
+    border-radius: 20px; /* Bordes redondeados */
+}
+.card-mb-3{
+    background-color: #b3b3b3;
+}
+.card .list-group-item {/* Ajuste del color de fondo de los elementos de lista dentro de la tarjeta 1 */
+    background-color: #b3b3b3;
+    color: #333;
+    border-color: #444; /* Bordes ligeros para diferenciar */
+}
+.card-title {/* Estilos para el título de la tarjeta */
+    color: #333; 
+}
+.card-text, .card p, .card h5 {/* Estilos para el texto dentro de las tarjetas */
+    color: #333;
+}
+.card img {/* Estilos para las imágenes en las tarjetas de gerontólogos */
+    border-radius: 8px;
+}
+.card-header{
+    background-color: 333;
 }
 
 
@@ -29,7 +56,6 @@ body {
 h1, h2, h3, h4, h5, h6 {
     color: #2d6a4f;
 }
-
 p, a, li {
     color: #000000;
 }
@@ -43,11 +69,9 @@ p, a, li {
     background-color: #73df73;
     color: #fff;
 }
-
 .top-bar .logo img {
     max-height: 100px; /* Ajusta la altura del logo */
 }
-
 .user-info {
     font-size: 1.1em;
     color: #333;
@@ -58,45 +82,38 @@ p, a, li {
     background-color: #333;
     top: 100px; /* Ajusta la altura de la barra superior */
 }
-
 .navbar-custom .navbar-brand {
     padding: 10px 15px;
     font-size: 1em;
 }
-
 .offcanvas-body {
     display: flex;
     flex-direction: column;
 }
-
 .offcanvas-footer {
     margin-top: auto; /* Empuja el botón hacia abajo */
 }
 
 /* Estilo personalizado del acordeón */
 .accordion-button {
-    background-color: #242424; /* Fondo negro */
-    color: #ffffff; /* Texto blanco */
+    background-color: #f8f9fa; /* Fondo */
+    color: #333; /* Texto */
     border: none;
 }
-
 .accordion-button:not(.collapsed) {
-    background-color: #242424; /* Fondo gris oscuro cuando está abierto */
-    color: #ffffff; /* Texto blanco */
+    background-color: #b3b3b3; /* Fondo gris oscuro cuando está abierto */
+    color: #333; /* Texto */
     font-weight: bold;
 }
-
 .accordion-button:focus {
     box-shadow: 0 0 0 0.25rem rgba(115, 223, 115, 0.5); /* Sombra verde al hacer foco */
 }
-
 .accordion-item {
     border: none;
 }
-
 .accordion-body {
-    background-color: #333; /* Fondo negro */
-    color: #ffffff; /* Texto blanco */
+    background-color: #b3b3b3; /* Fondo */
+    color: #333; /* Texto */
     border-top: 1px solid #73df73; /* Borde verde superior en el cuerpo */
 }
 
@@ -106,11 +123,9 @@ p, a, li {
     height: 500px; /* Ajusta la altura según lo que necesites */
     object-fit: cover; /* Mantiene el enfoque central de la imagen, evitando distorsión */
 }
-
 .carousel-caption h5 {
     color: #76f089; 
 }
-
 .carousel-caption p {
     color: #073007; 
 }
@@ -139,11 +154,6 @@ color: rgb(255, 255, 255); /* Cambia el color del texto para que contraste */
     width: 100%;
     box-sizing: border-box;
 }
-
-/*.content {*/
-/*    margin-bottom: 60px; /* Ajusta según el tamaño del footer */
-/*}*/
-
 
 /* Mapa */
 #map {
